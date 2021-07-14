@@ -1,0 +1,124 @@
+.landing-container {
+  //background-color:#efd094;
+  background-color:#fff5ee;
+  position: relative;
+  height: 100vh;
+
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+
+    .nav {
+      &-items {
+        display: flex;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      &-item {
+        list-style: none;
+        margin-left: 2rem; 
+      }
+
+      &-item:hover {
+        cursor: pointer;
+        // background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+        // background-position: bottom;
+        // background-size: 5px 2px;
+        // background-repeat: repeat-x;
+        border-bottom: 1px solid black;      }
+    }
+  }
+}
+
+.landing-content {
+    position: absolute;
+    bottom: 2rem;
+    margin:  2rem;
+
+    .strikethrough {
+      font-style: italic;
+      text-decoration: line-through
+    }
+  
+    .sub-title {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  
+    .title {
+      color: #e9967a;
+      font-size: 125px;
+      font-family: 'Spectral', serif;
+      font-weight: 800;
+      margin: -3rem 0 0 0;
+      letter-spacing: 3px;
+    }
+
+    .sub-title-detail-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      // background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+      // background-position: bottom;
+      // background-size: 5px 2px;
+      // background-repeat: repeat-x;
+      border-top: 1px solid black;
+      text-transform: lowercase;
+      letter-spacing: 2px;
+
+      .data-point {
+        text-transform: uppercase;
+      }
+    }
+
+    .sub-title-detail-container:last-child {
+      border-bottom: 1px solid black;
+    }
+  }
+
+  .fab {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 1rem;
+    text-transform: uppercase;
+
+    border: 1px solid black;
+    letter-spacing: 2px;
+  }
+
+@media only screen and (max-width: 1275px) {
+  .landing-content {
+    bottom: 8rem;
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  .title {
+    font-size: 100px !important;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .title {
+    font-size: 75px !important;
+    margin: -1rem 0 0 0 !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .landing-content {
+    margin: 1rem !important;
+  }
+
+  .title {
+    font-size: 50px !important;
+  }
+
+  .nav {
+    display: none !important;
+  }
+}
